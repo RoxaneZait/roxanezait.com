@@ -1,0 +1,167 @@
+.experience .box-wide {
+  position: relative;
+}
+
+.middle-shape-left {
+  position: absolute;
+  top: 3rem;
+  left: -136rem;
+}
+
+.middle-shape-right {
+  position: absolute;
+  top: 23rem;
+  right: -101rem;
+}
+
+.experience-heading {
+  margin-bottom: 5.4rem;
+}
+
+.experience-entries {
+  padding-left: 7.4rem;
+}
+
+.experience-entry {
+  margin-bottom: 6.3rem;
+}
+
+.experience-entry-header {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.experience-entry-header.collection {
+  flex-direction: column;
+}
+
+.experience-entry-header.collection h4 {
+  margin-bottom: 0.5rem;
+}
+
+.experience-entry h4 {
+  margin-bottom: 2rem;
+}
+
+.experience-entry .experience-entry-time {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.experience-entry-role-time {
+  display: inline-block;
+  color: #6d6d6d;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.experience-entry p {
+  font-size: 2.2rem;
+}
+
+.experience-entry-bodytext {
+  margin-top: 1.5rem;
+}
+
+.experience-entry-collection {
+  margin-left: 3rem;
+}
+
+.experience-entry-collection-item {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.memoji-fix {
+  z-index: 1;
+}
+
+.experience-line {
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  width: 0.1rem;
+  height: calc(100% - 3rem);
+  background-color: #d2c1b2;
+}
+
+.experience-bullet {
+  position: absolute;
+  top: 0.7rem;
+  left: -3rem;
+  transform: translateX(-50%);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #d2c1b2;
+}
+
+.hashtag {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.hash {
+  color: #a1a1a1;
+}
+
+.experience-entry-excerpt {
+  display: none;
+}
+
+.experience-entry-see-more {
+  background: none;
+  border: none;
+  color: #6d6d6d;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.entry-list-item {
+  display: inline-block;
+}
+
+@media all and (max-width: 1000px) {
+  section.experience {
+    margin-bottom: 0;
+  }
+
+  .skills {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .experience-entries {
+    padding-left: 0;
+  }
+
+  .experience-entry-header {
+    flex-direction: column;
+  }
+
+  .hashtags {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .hashtag {
+    margin-left: 0;
+  }
+
+  .experience-entry p {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .experience-entry-collection {
+    margin-left: 2.2rem;
+  }
+
+  .experience-entry p {
+    font-size: 2rem;
+  }
+}

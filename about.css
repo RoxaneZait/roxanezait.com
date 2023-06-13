@@ -1,0 +1,160 @@
+.about {
+  position: relative;
+  margin: 11rem 0 9rem 0;
+}
+
+.top-shape-left {
+  position: absolute;
+  top: -43rem;
+  left: -62.5rem;
+}
+
+.top-shape-right {
+  position: absolute;
+  top: -1rem;
+  right: -85rem;
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-photo-container {
+  height: 60.3rem;
+  width: 44.6rem;
+  min-height: 40rem;
+  min-width: 30rem;
+  flex-shrink: 0;
+  margin-top: 4rem;
+  background-color: #f7f7f7;
+}
+
+.profile-photo {
+  width: 100%;
+  animation: rotate-profile-photo 1.8s cubic-bezier(0.62, 0.05, 0.01, 0.99) 3.6s
+    forwards;
+  box-shadow: 7px 2px 40px rgba(0, 0, 0, 0.3);
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14rem;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-start;
+  line-height: 0.8;
+  margin-bottom: 6rem;
+}
+
+.heading-title {
+  text-transform: uppercase;
+  font-size: 20.8rem;
+}
+
+.heading-text {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  top: 0.4rem;
+  position: relative;
+}
+
+@keyframes rotate-profile-photo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .profile-photo-container {
+    width: 28vw;
+    height: 38vw;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+  .heading-title {
+    font-size: 15rem;
+  }
+
+  .heading-text {
+    font-size: 3rem;
+  }
+
+  .bio {
+    margin-left: 8rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio {
+    margin-left: 0;
+    margin-top: 12rem;
+  }
+
+  .profile-photo-container {
+    margin-top: 0;
+  }
+
+  .heading-title {
+    font-size: 16.8rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about-content {
+    padding: 0;
+  }
+
+  .heading {
+    margin-bottom: 3.5rem;
+  }
+
+  .heading-text {
+    font-size: 3rem;
+  }
+
+  .heading-text br {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 10rem;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .about {
+    margin: 7rem 0 7rem 0;
+  }
+
+  .about-content {
+    padding: 0;
+  }
+
+  .heading-text {
+    font-size: 2.1rem;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .bio {
+    margin-top: 6rem;
+  }
+
+  .bio .heading {
+    margin-bottom: 4rem;
+  }
+}

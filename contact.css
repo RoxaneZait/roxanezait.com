@@ -1,0 +1,73 @@
+.contact-heading {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+}
+
+.contact-bodytext {
+  margin-bottom: 5rem;
+}
+
+.contact-mailto {
+  font-size: 14rem;
+  margin-bottom: 10rem;
+}
+
+.contact-mailto-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter';
+  line-height: 1;
+}
+
+.contact-mailto-link-underline {
+  height: 1rem;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.underline-scrub {
+  position: relative;
+  height: 100%;
+  width: 5rem;
+  background-color: #f2eeeb;
+  left: -5rem;
+  transition: left 1.5s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+}
+
+.contact-mailto:hover .underline-scrub {
+  left: calc(100% + 5rem);
+}
+
+@media all and (max-width: 1200px) {
+  .contact-mailto {
+    font-size: 12rem;
+  }
+
+  .contact-mailto-link-underline {
+    height: 0.8rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .contact-mailto {
+    font-size: 9.5rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .contact-mailto {
+    font-size: 8rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .contact-mailto {
+    font-size: 9.5vw;
+  }
+
+  .contact-mailto-link-underline {
+    height: 0.6rem;
+  }
+}

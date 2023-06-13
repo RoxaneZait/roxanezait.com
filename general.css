@@ -1,0 +1,217 @@
+body {
+  font-family: 'InterLight';
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 2rem;
+  color: #000;
+}
+
+strong {
+  font-family: 'InterMedium';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 14rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2.6rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: 9rem 0 9rem 0;
+}
+
+.box-wide {
+  position: relative;
+  max-width: 125rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box-narrow {
+  max-width: 90rem;
+  width: 100%;
+}
+
+.ball {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 2rem;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.5s cubic-bezier(0.5, 0.22, 0.15, 0.8);
+  pointer-events: none;
+}
+
+.ball.big {
+  width: 12.4rem;
+  height: 12.4rem;
+  background-color: white;
+  transform: scale(0);
+}
+
+.ball.small {
+  width: 6rem;
+  height: 6rem;
+  /* background-color: #d6c0e8; */
+  background-color: black;
+  color: white;
+  transform: scale(0);
+}
+
+.ball.small.active {
+  transform: scale(1);
+}
+
+.ball.big.active {
+  transform: scale(1);
+}
+
+.ball.active {
+  opacity: 1;
+}
+
+.mouse-enter-container,
+.mouse-enter-container a {
+  cursor: none;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.intro-complete .slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro-complete .slide-in.delay1.active {
+  transition: opacity 0.8s 0.2s, transform 0.8s 0.2s;
+}
+
+.intro-complete .slide-in.delay2.active {
+  transition: opacity 0.8s 1.4s, transform 0.8s 1.4s;
+}
+
+.intro-complete .slide-in.delay3.active {
+  transition: opacity 0.8s 2.2s, transform 0.8s 2.2s;
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: url('./fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterLight';
+  src: url('./fonts/Inter-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterMedium';
+  src: url('./fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CormorantRegular';
+  src: url('./fonts/Cormorant-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CormorantMedium';
+  src: url('./fonts/Cormorant-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media all and (max-width: 1400px) {
+  .box-wide {
+    padding: 0 5rem 0 5rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  section {
+    margin: 0 0 9rem 0;
+  }
+
+  .mouse-enter-container,
+  .mouse-enter-container a {
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  .ball.big {
+    width: 11.4rem;
+    height: 11.4rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  h5 {
+    font-size: 2rem;
+  }
+
+  .box-wide {
+    padding: 0 3rem 0 3rem;
+  }
+}
